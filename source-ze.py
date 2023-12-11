@@ -5,10 +5,10 @@ import random
 import telebot
 from datetime import date ,timedelta ,time
 import time 
-elhypamody = '6509622797'
+elhypamody = '5719613462'
 bot = telebot.TeleBot(Config.TG_BOT_TOKEN)
 p3 = types.InlineKeyboardMarkup()
-p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
 A2 = types.InlineKeyboardButton(text = "اوامر التسلية .",callback_data="A2")
 A3 = types.InlineKeyboardButton(text = "اوامر الالعاب .",callback_data="A3")
@@ -273,7 +273,7 @@ def start(message):
 		k = message.from_user.username
 		d = time.strftime("%p %H:%M")
 		t = message.chat.type
-		y = '@UI_XB'
+		y = '@echonest'
 		bot.send_photo(message.chat.id,url,"""*  {}
 		
 𖡋 𝐈𝐃 ⌯ {} 
@@ -322,7 +322,7 @@ def start(message):
 	if m == ".":
 		f2 = message.from_user.first_name
 		p3 = types.InlineKeyboardMarkup()
-		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 		p3.add(p5)
 		bot.reply_to(message,f"{f2}",reply_markup=p3)
 	if '@' in message.text.lower():
@@ -349,9 +349,9 @@ def start(message):
 			bot.reply_to(message,"تم الغاء تثبيت الرسالة!") 
 	if m == "المطور" or m == "مطور" or m == "المبرمج":
 		p3 = types.InlineKeyboardMarkup()
-		e4 = types.InlineKeyboardButton(text = "المطور .",url="t.me/UP_UO")
+		e4 = types.InlineKeyboardButton(text = "المطور .",url="t.me/AWCODE3")
 		p3.add(e4)
-		h = """[مطور السورس .](t.me/UP_UO)"""
+		h = """[مطور السورس .](t.me/AWCODE3)"""
 		bot.reply_to(message,h,parse_mode="markdown",reply_markup=p3,disable_web_page_preview=True)
 		f2 = message.from_user.first_name
 		t2 = message.from_user.username
@@ -410,13 +410,13 @@ def start(message):
 	if message.text == "السورس" or message.text == "سورس":
 	    url = ["https://telegra.ph/file/5047bab5c7a88be186c93.jpg","https://telegra.ph/file/b69cb1ea62b6b63162aca.jpg","https://telegra.ph/file/c621f99ca961ffa2dafb8.jpg","https://telegra.ph/file/5571ba4345056196a6c2b.jpg"]
 	    p3 = types.InlineKeyboardMarkup()
-	    e3 = types.InlineKeyboardButton(text = "قناة السورس .",url="t.me/UI_XB")
-	    e4 = types.InlineKeyboardButton(text = "المطور .",url="t.me/UP_UO")
+	    e3 = types.InlineKeyboardButton(text = "قناة السورس .",url="t.me/echonest")
+	    e4 = types.InlineKeyboardButton(text = "المطور .",url="t.me/AWCODE3")
 	    p3.add(e3,e4)
 	    r = random.choice(url)
 	    h = """اهلا بك عزيزي في سورس الشبح
-[قناة السورس .](t.me/UI_XB)
-[مطور السورس .](t.me/UP_UO)"""
+[قناة السورس .](t.me/echonest)
+[مطور السورس .](t.me/AWCODE3)"""
 	    bot.send_photo(message.chat.id,r,h,reply_to_message_id=message.message_id,reply_markup=p3,parse_mode="markdown")
 	if message.text == "e":
 		c = bot.get_chat_member_count(chat_id)
@@ -454,7 +454,7 @@ def start(message):
 			bot.reply_to(message,"""*تم الغاء حظر العضو ↩️ :* [{}](t.me/{}) """.format(f2,t2,vv,bb),disable_web_page_preview=True,parse_mode="markdown")
 	if message.text == "الاوامر" or message.text == "اوامر":
 		p3 = types.InlineKeyboardMarkup()
-		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 		A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
 		A2 = types.InlineKeyboardButton(text = "اوامر التسلية .",callback_data="A2")
 		A3 = types.InlineKeyboardButton(text = "اوامر الالعاب .",callback_data="A3")
@@ -469,16 +469,16 @@ def start(message):
 اختر من الازرار،*
 """.format(f2,t2),disable_web_page_preview=True,parse_mode="markdown",reply_markup=p3)
 	p3 = types.InlineKeyboardMarkup()
-	p5 = types.InlineKeyboardButton( "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+	p5 = types.InlineKeyboardButton( "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 	p3.add(p5)
 	if message.text == "تمبلر" or message.text == "صور تمبلر" or message.text == "افتار تمبلر":
 		photo_str =  random.randint(74,154)
 		avtar_ainme = "https://t.me/PhotosDavid/" + str(photo_str)
 		bot.send_photo(message.chat.id,avtar_ainme,"""*تم اختيار صوره تمبلر اليك،
 - - - -- - - - - -- - - - -
-CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+CH - @echonest*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
 	p3 = types.InlineKeyboardMarkup()
-	p5 = types.InlineKeyboardButton( "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+	p5 = types.InlineKeyboardButton( "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 	p3.add(p5)
 	
 	
@@ -493,7 +493,7 @@ CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,rep
 		avtar_ball = "https://t.me/avtar781/" + str(photo_str)
 		bot.send_photo(message.chat.id,avtar_ball,"""*تم اختيار صورة لاعب اليك،
 - - - -- - - - - -- - - - -
-CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+CH - @echonest*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
 	if message.text == "ريمكس" or message.text == "مكس" or message.text == "ريم":
 		song_str = random.randint(74,154)
 		song_voice = "https://t.me/vVvdav/" + str(song_str)
@@ -558,7 +558,7 @@ CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,rep
 	m = message.text	
 	if m == "التقويم" or m == "تقويم" or m == "السنة" or m == "التاريخ":
 		p3 = types.InlineKeyboardMarkup()
-		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 		
 		p3.add(p5)
 		t = time.strftime("%p%H:%S")
@@ -569,7 +569,7 @@ CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,rep
 	m = message.text
 	if m == "الساعة" or m == "الساعه" or m == "الوقت":
 		p3 = types.InlineKeyboardMarkup()
-		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+		p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 		p3.add(p5)
 		t = time.strftime("%p %H:%S")
 		bot.reply_to(message,f"الساعة ⇜{t}",reply_markup=p3)	
@@ -590,7 +590,7 @@ CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,rep
 	     	
 	if message.text == "ذ" or message.text == "ذكر" or message.text == "ايه" or message.text == "اية" or message.text == "اذكار":
 	  p3 = types.InlineKeyboardMarkup()
-	  p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+	  p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 	  url = "https://ApiAzkar.amoapi.repl.co"
 	  msg = message.text
 	  p3.add(p5)
@@ -602,7 +602,7 @@ CH - @UI_XB*""",parse_mode="markdown",reply_to_message_id=message.message_id,rep
 	if message.text == 'كت' or message.text == 'كت تويت' or message.text == "تت":
 
 	    	p3 = types.InlineKeyboardMarkup()
-	    	p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+	    	p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
 	    	p4 = types.InlineKeyboardButton(text ='↫التالي↬', callback_data= 'c2')
 	    	r = random.choice(abod)
 	    	p3.add(p4)
@@ -616,7 +616,7 @@ def callback_data(call):
   if call.data == "c2":
   	r = random.choice(abod)
   	p3 = types.InlineKeyboardMarkup()
-  	p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/UI_XB")
+  	p5 = types.InlineKeyboardButton(text = "🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱",url="t.me/echonest")
   	p4 = types.InlineKeyboardButton(text ='↫التالي↬', callback_data= 'c2')
   	p3.add(p4)
   	p3.add(p5)
