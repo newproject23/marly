@@ -10,7 +10,7 @@ from Public_response_channel import *
 from cmdGbot import *
 from gamesBot import *
 
-bot = telebot.TeleBot(config.Token)
+
 insert_devloper_id()
 insert_bot_name()
 from functions_to_my_bots import *
