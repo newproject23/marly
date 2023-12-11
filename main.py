@@ -8,7 +8,7 @@ import requests
 
 bot = telebot.TeleBot(Config.TG_BOT_TOKEN)
 
-my_id =  int("Your_id") 
+my_id =  int("5719613462") 
 
 msg = "" # اتركها لا تخلي اي شي
 
